@@ -1,6 +1,6 @@
 import telebot, wikipedia, re
 
-bot = telebot.TeleBot('7271101698:AAHe-jjbIKu16gwRM8bRwLrx2MnPgiK48lo')
+bot = telebot.TeleBot
 
 wikipedia.set_lang("ru")
 
@@ -12,6 +12,7 @@ def getwiki(s):
         wikimas=wikitext.split('.')
         wikimas = wikimas[:-1]
         wikitext2 = ''
+        
         for x in wikimas:
             if not('==' in x):
                     
